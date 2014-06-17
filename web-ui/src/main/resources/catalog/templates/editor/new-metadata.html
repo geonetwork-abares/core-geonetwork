@@ -1,8 +1,9 @@
 <div class="container" id="gn-new-metadata-container">
   <h2 data-translate="">{{title}}</h2>
 
-  <div class="alert alert-warning" data-ng-hide="hasTemplates" 
-    data-translate="">noTemplatesAvailable</div>
+  <div class="alert alert-warning" data-ng-hide="hasTemplates"> 
+    <strong>{{templateError | translate}}</strong>
+	</div>
 
   <div class="progress progress-striped active"
     data-ng-show="hasTemplates && mdList === null">
@@ -15,8 +16,6 @@
         <div class="panel-heading">
           <span data-translate="">thatDescribes</span>
           <strong>{{(activeType || '...') | translate}}</strong>
-        </div>
-        <div class="panel-body">
           <div class="list-group gn-record-type">
             <a data-ng-repeat="type in mdTypes" href="" class="list-group-item"
               data-ng-click="getTemplateNamesByType(type)"

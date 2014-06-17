@@ -82,6 +82,12 @@
 
                 $scope.mdList = data;
                 $scope.hasTemplates = data.count != '0';
+								// set error message according to the type of operation
+								if (!$scope.hasTemplates && ($routeParams.childOf || $routeParams.from)) {
+									$scope.templateError = 'createMetadataNotAvailable';
+								} else {
+									$scope.templateError = 'noTemplatesAvailable';
+								}
 
                 var types = [];
                 // TODO: A faster option, could be to rely on facet type
