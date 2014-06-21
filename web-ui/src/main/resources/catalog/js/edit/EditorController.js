@@ -372,18 +372,6 @@
         return false;
       };
 			var destroyIt = function() {
-				/*
-				 * Iterate through the child scopes and kill 'em
-				 * all, because Angular 1.2 won't let us $destroy()
-				 * the $rootScope. But do we really need to do
-				 * this as the window will be destroyed anyway? 
-				 */
-				var scope = $rootScope.$$childHead;
-				while (scope) {
-				  var nextScope = scope.$$nextSibling;
-				  scope.$destroy();
-				  scope = nextScope;
-				}
         window.onbeforeunload = null;
         window.close();
 			};
