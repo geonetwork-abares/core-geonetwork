@@ -300,12 +300,6 @@
         }
         $scope.userUpdated = true;
         if ($scope.userIsAdmin) {
-          // Unselect all groups option
-          for (var i = 0; i < $scope.profiles.length; i++) {
-            if ($scope.profiles[i] !== 'Administrator') {
-              $('#groups_' + $scope.profiles[i])[0].selectedIndex = -1;
-            }
-          }
           $scope.userSelected.profile = 'Administrator';
         } else {
           // Define the highest profile for user
@@ -315,21 +309,20 @@
               var groups = $('#groups_' + $scope.profiles[i])[0];
               // If one of the group is selected, main user profile is updated
               if (groups.selectedIndex > -1 &&
-                  groups.options[groups.selectedIndex].value != '') {
+                groups.options[groups.selectedIndex].value != '') {
                 newprofile = $scope.profiles[i];
               }
             }
           }
           $scope.userSelected.profile = newprofile;
-
-          // If user is reviewer in one group, he is also editor for that group
-          var editorGroups = $('#groups_Editor')[0];
-          var reviewerGroups = $('#groups_Reviewer')[0];
-          if (reviewerGroups.selectedIndex > -1) {
-            for (var j = 0; j < reviewerGroups.options.length; j++) {
-              if (reviewerGroups.options[j].selected) {
-                editorGroups.options[j].selected = true;
-              }
+        }
+        // If user is reviewer in one group, he is also editor for that group
+        var editorGroups = $('#groups_Editor')[0];
+        var reviewerGroups = $('#groups_Reviewer')[0];
+        if (reviewerGroups.selectedIndex > -1) {
+          for (var j = 0; j < reviewerGroups.options.length; j++) {
+            if (reviewerGroups.options[j].selected) {
+              editorGroups.options[j].selected = true;
             }
           }
         }
@@ -502,3 +495,4 @@
     }]);
 
 })();
+
