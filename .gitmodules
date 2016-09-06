@@ -16,5 +16,5 @@
 	branch = 2.10.x
 [submodule "schemaPlugins"]
 	path = schemaPlugins
-	url = https://github.com/geonetwork/schema-plugins
+	url = https://github.com/geonetwork-abares/schema-plugins
 	branch = 2.10.x
