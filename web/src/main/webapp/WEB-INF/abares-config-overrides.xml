@@ -1,0 +1,92 @@
+<overrides>
+
+	<file name=".*WEB-INF/config\.xml">
+		<replaceXML xpath="resources">
+			<resource enabled="true">
+      	<name>main-db</name>
+      	<provider>jeeves.resources.dbms.JNDIPool</provider>
+      	<config>
+        	<context>java:/comp/env</context>
+        	<resourceName>jdbc/geonetwork</resourceName>
+  <!-- Place oracle URL here - gn really only needs to know what type of db it is using, 
+       so doesn't need to be a real URL - rest of the db info comes from tomcat -->
+        	<url>jdbc:oracle:thin:@abares.gov.au:7381/oradev</url>
+        	<provideDataStore>true</provideDataStore>
+        	<maxOpenPreparedStatements>300</maxOpenPreparedStatements>
+      	</config>
+    	</resource>
+		</replaceXML>
+	</file>
+
+	<!-- add abares description to the strings file - modify as required -->
+	<file name=".*geonetwork/loc/eng/xml/strings\.xml">
+		<replaceXML xpath="welcome.text">
+     <!-- ABARES Home Text-->
+<h4>Welcome to ABARES Catalog</h4>
+<p>ABARES Catalog is the central, searchable repository for dataset descriptions (metadata) relating to data held by ABARES.</p>
+		</replaceXML>
+    <replaceXML xpath="about.text">
+<p>The following tabs are available:             
+<ul>
+<li><b>Catalog:</b> provides both simple free text search and advanced options to search for metadata about data products.
+</li>
+<li><b>Map:</b> Displays map data on a 3D Globe using the NationalMap product.
+</li>
+<li><b>Browse:</b> latest and most popular metadata records.
+</li>
+<li><b>About:</b> (this page) contains some background information about the present version of eCat.
+</li>
+</ul>                
+</p>
+<p>Users should <b>Sign In</b> via the link at the top left hand side of the screen to view internal records and/or to create and edit metadata.
+</p>                               
+<p>For more information about the GeoNetwork Open Source product on which this version of eCat is built, see the <a href="http://geonetwork-opensource.org/">GeoNetwork project home page</a>. To contact the eCat development team to request new features or report problems, please use the email <a href="mailto:geonetworksupport@abares.gov.au">geonetworksupport@abares.gov.au</a>.</p>
+    </replaceXML>
+	</file>
+	<!-- Add geoserver layers for maps in classic interface only -->
+	<file name=".*WEB-INF/config-gui\.xml">
+		<!-- set server to use geoserver -->
+		<replaceAtt xpath="mapViewer/layers/layer" attName="server" value="http://localhost:8080/geoserver/wms" />
+		<addXML xpath="">
+			<!-- NICTA National Map config
+			     proxyDomains: means use nationalmap corsProxy on these domains 
+			     corsProxyHost: URL of corsProxy host - best if it runs on localhost 
+					 disableCorsProxy: set to false on platforms that can use nationalmap server.js + varnish,
+					               true means everything will go through proxyHost (GeoNetwork)
+			     proxyHost: URL of GeoNetwork proxy - used for all domains not handled by corsProxyHost 
+					 baseLayer: imagery to display as base layer in national map, types accepted are
+					            wms and bingmaps
+
+											eg. for bing maps:
+
+											"type": "bingmaps"
+											"options": {
+											   "url" : "//dev.virtualearth.net",
+											},
+			 -->
+			<nationalmap>
+			{
+			    "corsDomains" : [
+						"nicta.com.au",
+						"gov.au",
+						"arcgis.com"
+					],
+					"corsProxyHost"    :  "http://localhost:3001",
+					"disableCorsProxy" :  "true",
+					"proxyHost"        :  "../../proxy/",
+					"baseLayer"        : {
+						     "type" : "bing",
+						     "options" : {
+							        "url"    : "//dev.virtualearth.net"
+						     }
+					},
+					"terrainProvider" : {
+						"options" : {
+							"url"    : "//assets.agi.com/stk-terrain/v1/tilesets/world/tiles"
+						}
+					}
+			}
+			</nationalmap>
+		</addXML>
+	</file>
+</overrides>

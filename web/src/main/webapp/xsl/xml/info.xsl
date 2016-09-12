@@ -154,12 +154,14 @@
 			},
 			"iso19115-3":
 			{
-				"defaultTab":"default",
+				"defaultTab":"resourceDescription",
 				"displayToolTip":false,
 				"related":
 				{
 					"display":true,
-					"categories":["thumbnail","service","onlinesrc","parent","sibling"]
+					"uploadFileDisabled":true,
+					"displayFormatAndVersion":true,
+					"categories":["thumbnail","dataset","onlinesrc"]
 				},
 				"suggestion":
 				{
