@@ -75,9 +75,10 @@
 					"disableCorsProxy" :  "true",
 					"proxyHost"        :  "../../proxy/",
 					"baseLayer"        : {
-						     "type" : "bing",
+						     "type" : "wms",
 						     "options" : {
-							        "url"    : "//dev.virtualearth.net"
+ 											"url"    : "http://act001vgeonetq01.agdaff.gov.au:8080/geoserver/wms?",
+                      "layers" : "ea-be:World_Bright-Earth-e-Atlas-basemap_No-Labels"
 						     }
 					},
 					"terrainProvider" : {
