@@ -17,6 +17,19 @@
 
     <xsl:variable name="sectionName" select="@name"/>
 
+    <xsl:variable name="match">
+      <xsl:choose>
+        <xsl:when test="@if">
+          <saxon:call-template name="{concat('evaluate-', $schema, '-boolean')}">
+            <xsl:with-param name="base" select="$base"/>
+            <xsl:with-param name="in" select="concat('/../',@if)"/>
+          </saxon:call-template>
+        </xsl:when>
+        <xsl:otherwise><xsl:value-of select="true()"/></xsl:otherwise>
+      </xsl:choose>
+    </xsl:variable>
+    
+    <xsl:if test="$match = true()">
     <xsl:choose>
       <xsl:when test="$sectionName">
         <fieldset>
@@ -29,17 +42,18 @@
                 else $strings/*[name() = $sectionName]"
             />
           </legend>
-          <xsl:apply-templates mode="form-builder" select="@*|*">
+          <xsl:apply-templates mode="form-builder" select="@*[name()!='if']|*">
             <xsl:with-param name="base" select="$base"/>
           </xsl:apply-templates>
         </fieldset>
       </xsl:when>
       <xsl:otherwise>
-        <xsl:apply-templates mode="form-builder" select="@*|*">
+        <xsl:apply-templates mode="form-builder" select="@*[name()!='if']|*">
           <xsl:with-param name="base" select="$base"/>
         </xsl:apply-templates>
       </xsl:otherwise>
     </xsl:choose>
+    </xsl:if>
   </xsl:template>
 
 	<!-- Insert a HTML fragment in the editor from the localization files. -->
