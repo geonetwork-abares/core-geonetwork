@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cit:CI_Citation xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0"
+                       xmlns:mco="http://standards.iso.org/iso/19115/-3/mco/1.0"
+                       xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/1.0"
+                       uuid="urn:abares:licences:bsd"
+                       title="Licence: Software Licence BSD 3-Clause">
+         <cit:title>
+            <gco:CharacterString>Software Licence</gco:CharacterString>
+         </cit:title>
+         <cit:alternateTitle>
+            <gco:CharacterString>BSD 3-Clause</gco:CharacterString>
+         </cit:alternateTitle>
+</cit:CI_Citation>
+

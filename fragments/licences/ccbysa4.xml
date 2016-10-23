@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cit:CI_Citation xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0"
+                         xmlns:mco="http://standards.iso.org/iso/19115/-3/mco/1.0"
+                         xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/1.0"
+                         uuid="urn:abares:licences:ccbysa"
+                         title="Licence: Creative Commons Attribution-ShareAlike 4.0 International Licence CC-BY-SA">
+         <cit:title>
+            <gco:CharacterString>Creative Commons Attribution-ShareAlike 4.0 International Licence</gco:CharacterString>
+         </cit:title>
+         <cit:alternateTitle>
+            <gco:CharacterString>CC-BY-SA</gco:CharacterString>
+         </cit:alternateTitle>
+         <cit:edition>
+            <gco:CharacterString>4.0</gco:CharacterString>
+         </cit:edition>
+         <cit:onlineResource>
+            <cit:CI_OnlineResource>
+               <cit:linkage>
+                  <gco:CharacterString>http://creativecommons.org/licenses/</gco:CharacterString>
+               </cit:linkage>
+            </cit:CI_OnlineResource>
+         </cit:onlineResource>
+</cit:CI_Citation>

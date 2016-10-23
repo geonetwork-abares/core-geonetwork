@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cit:CI_Organisation id="DeptOfAg-ABARES"
+                 uuid="urn:abares:individual:1"
+                 title="Evert.Bleys@agriculture.gov.au">
+                <cit:name xlink:href="local://xml.metadata.get?uuid=urn:abares:organisationname:1"/>
+                <cit:contactInfo xlink:href="local://xml.metadata.get?uuid=urn:abares:contact:1"/>
+                <cit:individual>
+                  <cit:CI_Individual id="BleysEvertMr_AtTheOffice">
+                    <cit:name><gco:CharacterString>BLEYS Evert Mr</gco:CharacterString></cit:name>
+                    <cit:contactInfo><cit:CI_Contact>
+                        <cit:phone><cit:CI_Telephone>
+                            <cit:number><gco:CharacterString>02 6272 5627</gco:CharacterString></cit:number>
+                            <cit:numberType><cit:CI_TelephoneTypeCode codeList="http://data.agriculture.gov.au/anrdl/resources/codeList/codeList20161001.xml#CI_TelephoneTypeCode" codeListValue="voice">voice</cit:CI_TelephoneTypeCode></cit:numberType>
+                        </cit:CI_Telephone></cit:phone>
+                        <cit:address><cit:CI_Address>
+                            <cit:deliveryPoint><gco:CharacterString>MC.05.075</gco:CharacterString></cit:deliveryPoint>
+                            <cit:electronicMailAddress><gco:CharacterString>Evert.Bleys@agriculture.gov.au</gco:CharacterString></cit:electronicMailAddress>
+                        </cit:CI_Address></cit:address>
+                    </cit:CI_Contact></cit:contactInfo>
+                    <cit:positionName><gco:CharacterString>Data Manager</gco:CharacterString></cit:positionName>
+                  </cit:CI_Individual>
+                </cit:individual>
+</cit:CI_Organisation>

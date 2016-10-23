@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cit:CI_Contact uuid="urn:abares:contact:1"
+                title="ABARES Contact Info">
+                    <cit:phone><cit:CI_Telephone>
+                        <cit:number><gco:CharacterString>1800 900 090</gco:CharacterString></cit:number>
+                        <cit:numberType><cit:CI_TelephoneTypeCode codeList="http://data.agriculture.gov.au/anrdl/resources/codeList/codeList20161001.xml#CI_TelephoneTypeCode" codeListValue="voice">voice</cit:CI_TelephoneTypeCode></cit:numberType>
+                    </cit:CI_Telephone></cit:phone>
+                    <cit:phone><cit:CI_Telephone>
+                        <cit:number><gco:CharacterString>+61 3 8318 6700</gco:CharacterString></cit:number>
+                        <cit:numberType><cit:CI_TelephoneTypeCode codeList="http://data.agriculture.gov.au/anrdl/resources/codeList/codeList20161001.xml#CI_TelephoneTypeCode" codeListValue="voice">voice</cit:CI_TelephoneTypeCode></cit:numberType>
+                    </cit:CI_Telephone></cit:phone>
+                    <cit:address><cit:CI_Address>
+                        <cit:deliveryPoint><gco:CharacterString>GPO Box 858</gco:CharacterString></cit:deliveryPoint>
+                        <cit:city><gco:CharacterString>CANBERRA CITY</gco:CharacterString></cit:city>
+                        <cit:administrativeArea><gco:CharacterString>Australian Capital Territory</gco:CharacterString></cit:administrativeArea>
+                        <cit:postalCode><gco:CharacterString>2601</gco:CharacterString></cit:postalCode>
+                        <cit:country><gco:CharacterString>Australia</gco:CharacterString></cit:country>
+                    </cit:CI_Address></cit:address>
+                    <cit:address><cit:CI_Address>
+                        <cit:deliveryPoint><gco:CharacterString>18 Marcus Clarke Street</gco:CharacterString></cit:deliveryPoint>
+                        <cit:city><gco:CharacterString>CANBERRA CITY</gco:CharacterString></cit:city>
+                        <cit:administrativeArea><gco:CharacterString>Australian Capital Territory</gco:CharacterString></cit:administrativeArea>
+                        <cit:postalCode><gco:CharacterString>2601</gco:CharacterString></cit:postalCode>
+                        <cit:country><gco:CharacterString>Australia</gco:CharacterString></cit:country>
+                    </cit:CI_Address></cit:address>
+                    <cit:onlineResource><cit:CI_OnlineResource>
+                        <cit:linkage><gco:CharacterString>http://www.agriculture.gov.au/abares</gco:CharacterString></cit:linkage>
+                    </cit:CI_OnlineResource></cit:onlineResource>
+                    <cit:hoursOfService><gco:CharacterString>09:00 to 17:00 Monday to Friday</gco:CharacterString></cit:hoursOfService>
+</cit:CI_Contact>
