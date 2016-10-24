@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:gml="http://www.opengis.net/gml#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+   <skos:ConceptScheme rdf:about="http://agriculture.gov.au/abares/topiccategories.xml#1.0">
+      <dc:identifier>4460168b-bd41-437e-ad6e-0de32edb1a94</dc:identifier>
+      <dc:title>ABARES Topic Categories Register</dc:title>
+      <dc:description>Codelists for thematic classification of resources, as defined by ABARES (Australia Bureau of Agriculture and Resource Economics and Science)</dc:description>
+      <dc:URI>http://agriculture.gov.au/abares/topiccategories.xml</dc:URI>
+      <dct:modified>2016-10-24</dct:modified>
+      <dc:creator>
+         <foaf:Organization>
+            <foaf:name>ABARES - Australia Bureau of Agriculture and Resource Economics and Science</foaf:name>
+         </foaf:Organization>
+      </dc:creator>
+      <dc:publisher>
+         <foaf:Organization>
+            <foaf:name>ABARES - Australia Bureau of Agriculture and Resource Economics and Science</foaf:name>
+         </foaf:Organization>
+      </dc:publisher>
+      <dct:issued>2016-10-25T00:00:00</dct:issued>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://agriculture.gov.au/abares/topiccategories.xml#1">
+      <skos:prefLabel xml:lang="en">Agriculture</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://agriculture.gov.au/abares/topiccategories.xml#1.0"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://agriculture.gov.au/abares/topiccategories.xml#2">
+      <skos:prefLabel xml:lang="en">Biosecurity</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://agriculture.gov.au/abares/topiccategories.xml#1.0"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://agriculture.gov.au/abares/topiccategories.xml#3">
+      <skos:prefLabel xml:lang="en">Biotechnology and GMOs</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://agriculture.gov.au/abares/topiccategories.xml#1.0"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://agriculture.gov.au/abares/topiccategories.xml#4">
+      <skos:prefLabel xml:lang="en">Climate</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://agriculture.gov.au/abares/topiccategories.xml#1.0"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://agriculture.gov.au/abares/topiccategories.xml#5">
+      <skos:prefLabel xml:lang="en">Commodities</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://agriculture.gov.au/abares/topiccategories.xml#1.0"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://agriculture.gov.au/abares/topiccategories.xml#6">
+      <skos:prefLabel xml:lang="en">Conferences</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://agriculture.gov.au/abares/topiccategories.xml#1.0"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://agriculture.gov.au/abares/topiccategories.xml#7">
+      <skos:prefLabel xml:lang="en">Energy</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://agriculture.gov.au/abares/topiccategories.xml#1.0"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://agriculture.gov.au/abares/topiccategories.xml#8">
+      <skos:prefLabel xml:lang="en">Minerals</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://agriculture.gov.au/abares/topiccategories.xml#1.0"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://agriculture.gov.au/abares/topiccategories.xml#9">
+      <skos:prefLabel xml:lang="en">Environment and Natural Resource Management</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://agriculture.gov.au/abares/topiccategories.xml#1.0"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://agriculture.gov.au/abares/topiccategories.xml#10">
+      <skos:prefLabel xml:lang="en">Farm Performance and Farm Surveys</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://agriculture.gov.au/abares/topiccategories.xml#1.0"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://agriculture.gov.au/abares/topiccategories.xml#11">
+      <skos:prefLabel xml:lang="en">Fisheries and Aquaculture</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://agriculture.gov.au/abares/topiccategories.xml#1.0"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://agriculture.gov.au/abares/topiccategories.xml#12">
+      <skos:prefLabel xml:lang="en">Food</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://agriculture.gov.au/abares/topiccategories.xml#1.0"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://agriculture.gov.au/abares/topiccategories.xml#13">
+      <skos:prefLabel xml:lang="en">Forests</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://agriculture.gov.au/abares/topiccategories.xml#1.0"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://agriculture.gov.au/abares/topiccategories.xml#14">
+      <skos:prefLabel xml:lang="en">Indigenous Australia</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://agriculture.gov.au/abares/topiccategories.xml#1.0"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://agriculture.gov.au/abares/topiccategories.xml#15">
+      <skos:prefLabel xml:lang="en">Invasive Species</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://agriculture.gov.au/abares/topiccategories.xml#1.0"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://agriculture.gov.au/abares/topiccategories.xml#16">
+      <skos:prefLabel xml:lang="en">Land Use</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://agriculture.gov.au/abares/topiccategories.xml#1.0"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://agriculture.gov.au/abares/topiccategories.xml#17">
+      <skos:prefLabel xml:lang="en">Models, Risk, Spatial Data and Datasets</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://agriculture.gov.au/abares/topiccategories.xml#1.0"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://agriculture.gov.au/abares/topiccategories.xml#18">
+      <skos:prefLabel xml:lang="en">Social Issues</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://agriculture.gov.au/abares/topiccategories.xml#1.0"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://agriculture.gov.au/abares/topiccategories.xml#19">
+      <skos:prefLabel xml:lang="en">Trade and Markets</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://agriculture.gov.au/abares/topiccategories.xml#1.0"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://agriculture.gov.au/abares/topiccategories.xml#20">
+      <skos:prefLabel xml:lang="en">Water and Irrigation</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://agriculture.gov.au/abares/topiccategories.xml#1.0"/>
+   </skos:Concept>
+</rdf:RDF>
