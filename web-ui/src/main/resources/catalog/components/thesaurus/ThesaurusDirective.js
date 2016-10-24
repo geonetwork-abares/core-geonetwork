@@ -28,7 +28,8 @@
              elementRef: '@',
 						 schema: '@',
              domId: '@',
-						 transformation: '@'
+						 transformation: '@',
+             thesaurusType: '@'
            },
            templateUrl: '../../catalog/components/thesaurus/' +
            'partials/thesaurusselector.html',
@@ -41,8 +42,17 @@
              // in the record ?
              gnThesaurusService.getAll().then(
              function(listOfThesaurus) {
-               // TODO: Sort them
-               scope.thesaurus = listOfThesaurus;
+               if (scope.thesaurusType && scope.thesaurusType.length > 0) { 
+                  var thesaurusArray = [];
+                  $.each(listOfThesaurus, function(i, item) {
+                     if (item.props.dname === scope.thesaurusType) {
+                        thesaurusArray.push(item);
+                     }
+                  });
+                  scope.thesaurus = thesaurusArray;
+               } else {
+                 scope.thesaurus = listOfThesaurus;
+               }
              });
 
              scope.add = function() {
