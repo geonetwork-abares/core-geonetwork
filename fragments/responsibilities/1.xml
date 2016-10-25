@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cit:CI_Organisation id="DeptOfAg-ABARES"
+<cit:CI_Organisation xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/1.0"
+                     xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0"
+                     xmlns:xlink="http://www.w3.org/1999/xlink"
+                 id="DeptOfAg-ABARES"
                  uuid="urn:abares:individual:1"
                  title="Evert.Bleys@agriculture.gov.au">
                 <cit:name xlink:href="local://xml.metadata.get?uuid=urn:abares:organisationname:1"/>

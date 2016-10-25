@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<cit:CI_Responsibility xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/1.0" 
-                       uuid="urn:abares:distributor:1"
-                       title="E.Bleys ABARES Distributor">
-            <cit:role><cit:CI_RoleCode codeList="http://data.agriculture.gov.au/anrdl/resources/codeList/codeList20161001.xml#CI_RoleCode" codeListValue="resourceProvider">distributor</cit:CI_RoleCode></cit:role>
-            <cit:party xlink:href="local://xml.metadata.get?uuid=urn:abares:individual:1"/>
-</cit:CI_Responsibility>

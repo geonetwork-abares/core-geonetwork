@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cit:CI_Contact uuid="urn:abares:contact:1"
+<cit:CI_Contact xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/1.0"
+                xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0"
+                uuid="urn:abares:contact:1"
                 title="ABARES Contact Info">
                     <cit:phone><cit:CI_Telephone>
                         <cit:number><gco:CharacterString>1800 900 090</gco:CharacterString></cit:number>

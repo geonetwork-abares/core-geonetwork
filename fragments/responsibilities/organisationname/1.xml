@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<gco:CharacterString uuid="urn:abares:organisationname:1" title="ABARES">Australian Bureau of Agricultural and Resource Economics and Sciences</gco:CharacterString>
+<gco:CharacterString xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0" uuid="urn:abares:organisationname:1" title="ABARES">Australian Bureau of Agricultural and Resource Economics and Sciences</gco:CharacterString>
