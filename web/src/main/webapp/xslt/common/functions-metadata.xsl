@@ -34,9 +34,11 @@
     Add try/catch block to log out when a label id duplicated
     in loc files. XSLv3 could be useful for that.
     -->
-    <!--<xsl:message>#<xsl:value-of select="$name"/></xsl:message>
-    <xsl:message>#<xsl:value-of select="$xpath"/></xsl:message>
-    <xsl:message>#<xsl:value-of select="$parent"/></xsl:message>-->
+    <!--
+    <xsl:message>Name:   #<xsl:value-of select="$name"/></xsl:message>
+    <xsl:message>Xpath:  #<xsl:value-of select="$xpath"/></xsl:message>
+    <xsl:message>Parent: #<xsl:value-of select="$parent"/></xsl:message>
+    -->
     
     
     <!-- Name with context in current schema -->
@@ -335,10 +337,11 @@
     <xsl:param name="name" as="xs:string"/>
     <xsl:param name="context" as="xs:string"/>
 
-    <xsl:variable name="exception" select="count($configuration/flatModeExceptions/for[@name = $name and (contains(@context,$context) or normalize-space(@context)='')])"/>
+    <xsl:variable name="exceptionWithContext" select="count($configuration/flatModeExceptions/for[@name = $name and contains(@context,$context)])"/>
+    <xsl:variable name="exception" select="count($configuration/flatModeExceptions/for[@name = $name])"/>
 
     <xsl:value-of
-        select="if ($exception > 0)
+        select="if ($exception > 0 or $exceptionWithContext > 0)
       then true()
       else false()"
         />
