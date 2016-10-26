@@ -703,7 +703,7 @@
 								</xsl:when>
 								<xsl:otherwise>
 								  <i class="btn fa fa-plus gn-add"
-									  data-ng-click="add({$parentEditInfo/@ref}, '{concat(@prefix, ':', @name)}', '{$id}', 'before');"
+									  data-ng-click="add({$parentEditInfo/@ref}, '{concat(@prefix, ':', @name)}', '{$id}', '{if (@max = 1) then 'replace' else 'before'}');"
 									/>
 								</xsl:otherwise>
 							</xsl:choose>

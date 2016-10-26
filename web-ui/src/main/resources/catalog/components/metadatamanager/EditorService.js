@@ -285,7 +285,7 @@
                var target = $('#gn-el-' + insertRef);
                var snippet = $(data);
 
-               if (attribute) {
+               if (attribute || ( position && position === 'replace' )) {
                  target.replaceWith(snippet);
                } else {
                  // If the element was a add button
