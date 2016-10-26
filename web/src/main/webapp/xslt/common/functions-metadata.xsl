@@ -328,6 +328,22 @@
         />
   </xsl:function>
 
+  <!-- Return if a flat mode exception has been defined in the current view for a field. Check against a
+       context for flat mode exceptions that are only active in a particular element. -->
+  <xsl:function name="gn-fn-metadata:getFieldFlatModeExceptionWithContext" as="xs:boolean">
+    <xsl:param name="configuration" as="node()"/>
+    <xsl:param name="name" as="xs:string"/>
+    <xsl:param name="context" as="xs:string"/>
+
+    <xsl:variable name="exception" select="count($configuration/flatModeExceptions/for[@name = $name and (contains(@context,$context) or normalize-space(@context)='')])"/>
+
+    <xsl:value-of
+        select="if ($exception > 0)
+      then true()
+      else false()"
+        />
+  </xsl:function>
+
   <xsl:function name="gn-fn-metadata:getXPath" as="xs:string">
     <xsl:param name="node" as="node()"/>
     
