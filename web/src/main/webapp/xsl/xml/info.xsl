@@ -161,7 +161,7 @@
 					"display":true,
 					"uploadFileDisabled":true,
 					"displayFormatAndVersion":true,
-					"categories":["thumbnail", "parent"]
+					"categories":["parent"]
 				},
 				"suggestion":
 				{
